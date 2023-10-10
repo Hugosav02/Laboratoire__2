@@ -7,9 +7,6 @@ export default class mathsController extends Controller {
   
   get() {
     const params = this.HttpContext.path.params;
-    if(Object.keys(params).length == 0) {
-      //retouner page
-    }
     const optionsOperandes = [' ', '-', '*', '/', '%', '!', 'p', 'np'];
     let result = {};
     
